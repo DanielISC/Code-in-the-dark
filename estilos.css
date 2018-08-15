@@ -1,0 +1,422 @@
+.head-main {
+    background-repeat: no-repeat;
+	background-image: url('https://boomerdigital.net/images/nyc2.jpg');
+  	background-size: 100% 100%;	
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.lleno{
+  	width: 100%;
+	display: block;
+  	float:left;
+  	height: 40px;
+}
+
+.navbar{
+    width: 50%;
+    float: right;
+    margin-right: 4%;
+}
+
+@media only screen and (max-width: 750px) {
+	.navbar { 
+		width: 70%;
+	}
+
+	#menu  li a{		
+		font-size: 17px !important;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	.navbar { 
+		width: 100%;
+	}
+
+	#menu  li a{		
+		font-size: 15px !important;
+	}
+
+}
+
+#menu{
+	font-weight: 300;
+  	color: #222;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #4F4E56;
+}
+#menu li a:hover{
+	color: #7CA5AB;
+}
+
+ul.menu-opciones {
+  list-style: none;
+  padding-left: 0;
+}
+ul.menu-opciones li {
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-width: 850px) {
+	ul.menu-opciones-actividad li{
+	  width: 50% !important;
+	}	
+}
+
+@media only screen and (max-width: 540px) {
+	ul.menu-opciones-actividad li{
+	  width: 100% !important;
+	}	
+}
+
+.logo img{
+	margin: auto;
+	width: 375px;
+}
+.imagen{
+	width: 100%;
+	padding-bottom: 25%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;	
+}
+
+ul li {
+    text-align: center;
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+	display: block;
+	max-width: 100%;
+    height: auto;
+}
+
+.contenido {
+	background-color: #EFF3F4;
+    box-sizing: border-box;
+}
+.descript {
+	width: 60%;
+    font-size: 24px;
+    font-weight: 300;
+	margin: 10px auto;
+	text-align: center;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+	.descript {
+		font-size: 20px !important;
+	}
+}
+.descript p {
+    margin-bottom: 1.25rem;
+}
+
+.descript h4 {
+	color: #7CA5AB;
+}
+
+.listas {
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#menu-actividad{
+    color: #222;
+    font-size: 20px;
+    width: 100%;
+}
+
+#menu-actividad li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+#menu-actividad li a  i{
+    font-size: 60px;
+}
+
+ul.menu-opciones-actividad {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.menu-opciones-actividad li {
+  float: left;
+  width: 25%;
+  padding: 30px 0;
+}
+
+li.actividad {
+  word-wrap: break-word;
+  height: 110px;
+  background-color: #7CA5AB;
+}
+li.actividad:hover {
+    background-color: #4F4D57;
+}
+
+
+ul.menu-cards {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.menu-cards li {
+  float: left;
+  width: 33.333%;
+}
+
+.containrer-card{
+  position: relative;
+}
+
+li.card img {
+  position: relative;
+  z-index: 100;
+}
+
+li.card img:hover {
+  z-index: 90;
+}
+
+span.info-card {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+  z-index: 99;
+  color: white;
+  text-align: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding-top: 15%;
+
+}
+
+@media only screen and (max-width: 730px) {
+  span.info-card {
+    padding-top: 5% !important;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  ul.menu-cards li{
+    width: 100% !important;
+    font-size: 42px;
+  }
+
+}
+
+@media only screen and (max-width: 450px) {
+  ul.menu-cards li{
+    font-size: 31px;
+  }
+
+}
+
+span.info-card:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+}
+
+span.info-card h4{
+  line-height: 1.4;  
+  font-family: 'Oswald', sans-serif;
+}
+
+.info-card a{
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -webkit-transition: background-color .3s;
+  transition: background-color .3s;
+  font-size: 17px !important;
+}
+.info-card a:hover{
+  background-color: white;
+  color: black !important;
+}
+
+ul.menu-advertising li {
+  float: left;
+  width: 16.66%;
+}
+
+
+@media only screen and (max-width: 800px) {
+  ul.menu-advertising li {
+    width: 33.33% !important;
+        height: 100px;
+  }
+
+}
+
+.menu-advertising .containrer-card {
+  padding: 5px 30px;
+}
+.menu-advertising img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.see-more{
+  margin-top: 5%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.see-more button{
+  font-size: 13px;
+  margin-left: 30px;
+  color: white;
+  text-align: center;
+  padding: 10PX 17px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  background-color: #674D74;
+  border: 1px solid #674D74;
+  cursor: pointer;
+}
+
+.half-logo {
+  background-color: white;
+}
+
+.logos {
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.half1 {
+  width: 32%;
+  margin: 5px 7%;
+}
+
+.half2 {
+  width: 32%;
+  margin: 10% 7% 5px 7%;
+}
+
+.cards-contact{
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  padding-bottom: 30px;
+}
+
+.contact-box {
+  word-wrap: break-word;  
+  font-size: 17px;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  width: 45%;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+
+
+@media only screen and (max-width: 830px) {
+  .contact-box {
+    font-size: 12px !important;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  .contact-box {
+    font-size: 8px !important;
+  }
+
+}
+
+.contact-box i{
+  color: #7CA5AB;
+}
+
+footer {
+  display: block;
+}
+
+footer p{
+  margin-left: 15px;
+  width: 50%;
+  float: left;
+}
+
+.listas-contact {
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  -webkit-flex-flow: row wrap;
+  width: 40%;
+  padding-bottom: 10px;
+  float: right;
+}
+
+@media only screen and (max-width: 870px) {
+  .listas-contact {
+  }
+}
+
+#menu-contact{
+    color: #222;
+    font-size: 20px;
+    width: 100%;
+}
+
+#menu-contact li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: gray;
+}
+#menu-contact li a:hover {
+    color: #7CA5AB;
+}
+
+ul.menu-opciones-contact {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+ul.menu-opciones-contact li {
+  float: left;
+  width: 8%;
+  padding-left: 12%;
+}
+
+li.cont {
+  word-wrap: break-word;  
+}
