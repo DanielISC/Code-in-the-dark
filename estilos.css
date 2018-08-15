@@ -1,211 +1,153 @@
-.head-main {
-    background-repeat: no-repeat;
-	background-image: url('https://boomerdigital.net/images/nyc2.jpg');
-  	background-size: 100% 100%;	
-    max-width: 100%;
-    max-height: 100%;
+* {  
+  font-family: "Open Sans", sans-serif;
 }
-
-
-.lleno{
-  	width: 100%;
-	display: block;
-  	float:left;
-  	height: 40px;
+img {  
+  max-width: 100%;
+  height: auto;
 }
-
-.navbar{
-    width: 50%;
-    float: right;
-    margin-right: 4%;
-}
-
-@media only screen and (max-width: 750px) {
-	.navbar { 
-		width: 70%;
-	}
-
-	#menu  li a{		
-		font-size: 17px !important;
-	}
-}
-
-@media only screen and (max-width: 530px) {
-	.navbar { 
-		width: 100%;
-	}
-
-	#menu  li a{		
-		font-size: 15px !important;
-	}
-
-}
-
-#menu{
-	font-weight: 300;
-  	color: #222;
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-}
-
-#menu li a {
-    text-decoration: none;
-    font-size: 20px;
-    text-transform: uppercase;
-    color: #4F4E56;
-}
-#menu li a:hover{
-	color: #7CA5AB;
-}
-
-ul.menu-opciones {
-  list-style: none;
-  padding-left: 0;
-}
-ul.menu-opciones li {
-  float: left;
-  width: 25%;
-}
-
-@media only screen and (max-width: 850px) {
-	ul.menu-opciones-actividad li{
-	  width: 50% !important;
-	}	
-}
-
-@media only screen and (max-width: 540px) {
-	ul.menu-opciones-actividad li{
-	  width: 100% !important;
-	}	
-}
-
-.logo img{
-	margin: auto;
-	width: 375px;
-}
-.imagen{
-	width: 100%;
-	padding-bottom: 25%;
-}
-
-body {
-    font-family: "Open Sans", sans-serif;
-    margin: 0;	
-}
-
-ul li {
-    text-align: center;
-    list-style: none;
-}
-
-img{
-    vertical-align: middle;
-	display: block;
-	max-width: 100%;
-    height: auto;
-}
-
-.contenido {
-	background-color: #EFF3F4;
-    box-sizing: border-box;
-}
-.descript {
-	width: 60%;
-    font-size: 24px;
-    font-weight: 300;
-	margin: 10px auto;
-	text-align: center;
-    font-size: 1.5rem;
-}
-
-@media only screen and (max-width: 700px) {
-	.descript {
-		font-size: 20px !important;
-	}
-}
-.descript p {
-    margin-bottom: 1.25rem;
-}
-
-.descript h4 {
-	color: #7CA5AB;
-}
-
-.listas {
-  display: -webkit-flex;
-  flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
-  width: 100%;
-  padding-bottom: 10px;
-}
-
-#menu-actividad{
-    color: #222;
-    font-size: 20px;
-    width: 100%;
-}
-
-#menu-actividad li a {
-    text-decoration: none;
-    font-size: 24px;
-    color: white;
-}
-
-#menu-actividad li a  i{
-    font-size: 60px;
-}
-
-ul.menu-opciones-actividad {
-  list-style: none;
-  padding-left: 0;
+body{
+  background-color: #EFF3F4;
   margin: 0;
 }
+hr {
+  margin-bottom: 0;
+}
+/*-------------------------header------------------------*/
+.head-main {
+  background-image: url('https://boomerdigital.net/images/nyc2.jpg');
+}
+/*-------------------------header------------------------*/
 
-ul.menu-opciones-actividad li {
-  float: left;
-  width: 25%;
-  padding: 30px 0;
+/*-------------------------nav------------------------*/
+.navbar {
+  list-style: none;
+  margin: 0;   
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
 }
 
-li.actividad {
+.navbar a{
+  text-decoration: none;
+  display: block;
+  text-align: center; 
+  padding: 10px;
+  color: black;
+}
+
+.navbar a:hover{
+  color: #7CA5AB;
+}
+
+/*-------------------------nav------------------------*/
+
+
+/*------------------------logo------------------------*/
+.logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15%;
+}
+.logo img{
+  margin: auto;
+}
+/*------------------------logo------------------------*/
+
+
+
+/*---------------------tols-list----------------------*/
+.tols-list{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+
+.tols-list a{
+  text-decoration: none;
+  color: white;
+}
+
+.tols-list i{
+  font-size: 55px;
+  padding-bottom: 15px;
+}
+
+.tols-list li{
   word-wrap: break-word;
   height: 110px;
   background-color: #7CA5AB;
+  padding: 20px;
+  width: 100%;
 }
-li.actividad:hover {
-    background-color: #4F4D57;
-}
-
-
-ul.menu-cards {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
+.tols-list li:hover{
+  background-color: #4F4D57;
 }
 
-ul.menu-cards li {
-  float: left;
-  width: 33.333%;
+
+@media all and (max-width: 730px) {
+  .tols-list{
+    flex-flow: column;
+  }
+}
+
+/*---------------------tols-list----------------------*/
+
+/*---------------------descript-----------------------*/
+.descript {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  display: block;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  font-size: 1.5rem;  
+}
+
+@media all and (max-width: 600px) {
+  .text{
+    font-size: 1.3rem;  
+  }
+}
+/*---------------------descript-----------------------*/
+
+/*--------------------menu-cards----------------------*/
+.menu-cards {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  list-style: none; 
+  padding: 0;
+}
+
+.menu-cards li{
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.card img {
+  position: relative;
+  z-index: 100;
+}
+
+.card img:hover {
+  z-index: 90;
 }
 
 .containrer-card{
   position: relative;
 }
 
-li.card img {
-  position: relative;
-  z-index: 100;
-}
-
-li.card img:hover {
-  z-index: 90;
-}
-
 span.info-card {
   opacity: 0;
   position: absolute;
   text-align: center;
-  -webkit-transition: background-color 1s;
   transition: background-color 1s;
   z-index: 99;
   color: white;
@@ -215,28 +157,6 @@ span.info-card {
   right: 0px;
   bottom: 0px;
   padding-top: 15%;
-
-}
-
-@media only screen and (max-width: 730px) {
-  span.info-card {
-    padding-top: 5% !important;
-  }
-
-}
-
-@media only screen and (max-width: 600px) {
-  ul.menu-cards li{
-    width: 100% !important;
-    font-size: 42px;
-  }
-
-}
-
-@media only screen and (max-width: 450px) {
-  ul.menu-cards li{
-    font-size: 31px;
-  }
 
 }
 
@@ -252,6 +172,8 @@ span.info-card h4{
 }
 
 .info-card a{
+  text-decoration: none;
+  color: white;
   border: 1px solid white;
   padding: 10px;
   border-radius: 5px;
@@ -266,32 +188,54 @@ span.info-card h4{
   color: black !important;
 }
 
-ul.menu-advertising li {
-  float: left;
-  width: 16.66%;
-}
-
-
-@media only screen and (max-width: 800px) {
-  ul.menu-advertising li {
-    width: 33.33% !important;
-        height: 100px;
+@media all and (max-width: 530px) {
+  .menu-cards{
+    flex-flow: column;
   }
-
+  span.info-card {
+    padding-top: 0% ;
+    font-size: 37px;
+  }
+  span.info-card h4{
+    margin: 12% 0 20px 0;
+  }
 }
 
-.menu-advertising .containrer-card {
-  padding: 5px 30px;
+@media all and (max-width: 610px) {
+  span.info-card {
+    padding-top: 5%;
+  }
 }
-.menu-advertising img {
-  -webkit-filter: grayscale(100%);
+/*--------------------menu-cards----------------------*/
+
+/*-----------------------prom-------------------------*/
+.prom {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.prom > * {
+  flex: 1 100%;
+}
+
+.prom img {
   filter: grayscale(100%);
 }
 
+.prom .item-2 {
+  padding-top: 4px;
+}
+
+/*-----------------------prom-------------------------*/
+
+/*---------------------see-more-----------------------*/
 .see-more{
+  display: flex;
   margin-top: 5%;
   margin-bottom: 3%;
   text-align: center;
+  justify-content: center;
 }
 
 .see-more button{
@@ -307,7 +251,9 @@ ul.menu-advertising li {
   border: 1px solid #674D74;
   cursor: pointer;
 }
+/*---------------------see-more-----------------------*/
 
+/*---------------------logos-----------------------*/
 .half-logo {
   background-color: white;
 }
@@ -330,21 +276,46 @@ ul.menu-advertising li {
   margin: 10% 7% 5px 7%;
 }
 
+/*---------------------logos-----------------------*/
+
+
+/*---------------------desctipt-----------------------*/
+.descript {
+  width: 60%;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .descript {
+    font-size: 20px !important;
+  }
+}
+.descript p {
+    margin-bottom: 1.25rem;
+}
+
+.descript h4 {
+  color: #7CA5AB;
+}
+
 .cards-contact{
-  display: -webkit-flex;
+  display: flex;
   flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
   padding-bottom: 30px;
 }
 
 .contact-box {
   word-wrap: break-word;  
-  font-size: 17px;
   box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.1);
   background-color: white;
-  width: 45%;
+  width: 35%;
   margin: 0 auto;
-  padding: 10px 0px;
+  padding: 15px 0px;
+  text-align: center;
 }
 
 
@@ -365,21 +336,28 @@ ul.menu-advertising li {
 .contact-box i{
   color: #7CA5AB;
 }
+/*---------------------desctipt-----------------------*/
+
 
 footer {
-  display: block;
+  display: flex;
+  background-color: white;
+  padding-top: 5px;
 }
 
 footer p{
+  margin-top: 0;
   margin-left: 15px;
   width: 50%;
   float: left;
 }
-
+.text-footer {
+  flex: 2 100%;
+}
 .listas-contact {
-  display: -webkit-flex;
+  flex: 1 100%;
+  display: flex;
   flex-flow: row wrap;
-  -webkit-flex-flow: row wrap;
   width: 40%;
   padding-bottom: 10px;
   float: right;
